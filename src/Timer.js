@@ -67,7 +67,7 @@ function Timer() {
   return (
     <div>
       <CircularProgressbar
-        strokeWidth={3}
+        strokeWidth={2}
         background={true}
         value={percentage}
         text={minutes + ':' + seconds}
@@ -77,15 +77,15 @@ function Timer() {
         trailColor:'rgb(167, 143, 131)',
         backgroundColor:'#E8D1C5',
       })} />
-      <div style={{marginTop:'-300px'}}>
-        <h1>{mode === 'work' ? 'Study' : 'Break'}</h1>
+      <div style={{marginTop:'-350px'}}>
+        <h1>{mode === 'work' ? 'Focus' : 'Break'}</h1>
       </div>
-      <div style={{marginTop:'120px'}}>
+      <div style={{marginTop:'160px'}}>
         {isPaused
           ? <PlayButton onClick={() => { setIsPaused(false); isPausedRef.current = false; }} />
           : <PauseButton onClick={() => { setIsPaused(true); isPausedRef.current = true; }} />}
       </div>
-      <div style={{marginTop:'120px'}}>
+      <div style={{marginTop:'90px'}}>
         <SettingsButton onClick={() => settingsInfo.setShowSettings(true)} />
       </div>
     </div>

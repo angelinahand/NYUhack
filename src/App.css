@@ -43,6 +43,7 @@
 
 :root{
   --brown: #61544D;
+  --lightBrown: #E8D1C5;
   --green: #4aec8c;
 }
 
@@ -50,12 +51,25 @@ body{
   background-color: #FFF1E6;
   color: #61544D;
 }
-main{
+
+/* main{
   padding-top: 50px;
   max-width: 340px;
   margin: 0 auto;
   text-align: center;
+} */
+
+main{
+margin: 30px;
 }
+
+.timer{
+  max-width: 400px;
+  text-align: center;
+  margin-left: 228px;
+  margin-top: 40px;
+}
+
 
 .start-btn{
   border: none;
@@ -87,6 +101,7 @@ button.with-text{
   padding: 10px 20px;
   font-size: 1.4rem;
   line-height: 36px;
+  color: #61544D;
 }
 button.with-text svg{
   width: 36px;
@@ -101,20 +116,39 @@ label{
   text-transform: capitalize;
 }
 
-/* Tic Tac Toe CSS */
-
-.board {
-  width: 300px;
-  height: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  border: 2px solid var(--brown);
+.dino-img{
+  max-width: 337px;
+  margin-top: -300px;
+  position: absolute;
+  right: 80px;
 }
 
-.square { 
-  width: 100px;
-  height: 100px;
-  border: 2px solid var(--brown);
-  box-sizing: border-box;
+.music{
+  background-color: white;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  border-radius: 30px;
+  padding-right: 18px;
+  padding-left: 10px;
+  padding-top: 5px;
+  max-height: 63px;
+  display: flex;
+  justify-content: center;
+}
+
+.songDec{
+  max-height: 63px;
+  margin-top: 10px;
+}
+
+.btn-music{
+  /* margin-top: 3px; */
+  max-width: 63px;
+}
+
+.upper{
+  bottom: 330px;
+  right: 245px;
+  max-width: 230px;
 }
