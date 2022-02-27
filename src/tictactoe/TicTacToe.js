@@ -104,10 +104,10 @@ function TicTacToe() {
             onClick={() => handleSquareClick(index)} />
         )}
       </Board>
-      {/* <picture>
+      <picture>
         <source srcset={ModeStatic} media="(prefers-reduced-motion: reduce)"></source> 
         <img className="modeAnimated" srcset={ModeAnimated} alt="Animated character"/>
-      </picture> */}
+      </picture>
         <Link className="backBtn" to="/">Back to Timer</Link>
       {!!winner && winner === 'x' && (
         <div className="result">
