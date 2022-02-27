@@ -148,6 +148,15 @@ label{
   justify-content: center;
 }
 
+.musicPause svg {
+  fill: var(--brown);
+  width: 51px;
+}
+
+button.musicPause {
+  width: auto;
+}
+
 .songDec{
   max-height: 63px;
   margin-top: 15px;
