@@ -8,6 +8,7 @@ import {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import ModeAnimated from '../images/mode-animated.gif';
 import ModeStatic from '../images/mode.png';
+import Music from "../Music";
 
 const defaultSquares = () => (new Array(9)).fill(null);
 
@@ -122,6 +123,7 @@ function TicTacToe() {
           <h3>Mode wins!</h3>
         </div>
       )}
+      <Music/>
     </main>
   );
 }

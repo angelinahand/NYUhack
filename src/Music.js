@@ -30,7 +30,7 @@ class Music extends Component{
     return(
         <div className="music">
             {this.RenderButtonSound()}
-            <h1 className="songDec">A Dream Of Summer</h1>
+            <h2 className="songDec">A Dream Of Summer</h2>
         </div>
     );}
 
