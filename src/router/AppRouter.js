@@ -9,7 +9,7 @@ function AppRouter() {
             <Routes>
             <Route path="/" element={<App />} />
             <Route path="/tictactoe" element={<TicTacToe />} />
-            <Route path="/rockpaperscissors" element={<RockPaperScissors />} />
+            <Route path="/rockPaperScissors" element={<RockPaperScissors />} />
             </Routes>
         </BrowserRouter>
     )
