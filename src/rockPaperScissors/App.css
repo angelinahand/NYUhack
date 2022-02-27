@@ -10,7 +10,7 @@ body {
 }
 
 .app {
-  font-family: sans-serif;
+  font-family: monospace;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@ body {
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
-  background: #478aef;
+  background: #C8B1A5;
   color: #cadbf5;
 }
 
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'ui-monospace';
 }
 
 .info {
@@ -73,11 +73,11 @@ h6 {
 }
 
 .wins .number {
-  color: #5dc674;
+  color: #C8B1A5;
 }
 
 .losses .number {
-  color: #da516f;
+  color: #C8B1A5;
 }
 
 .choices {
@@ -85,9 +85,9 @@ h6 {
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   grid-gap: 20px;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'monospace', sans-serif;
   font-size: 18px;
-  color: #5f99f0;
+  color: #C8B1A5;
 }
 
 .choices > div {
@@ -126,40 +126,40 @@ h6 {
 }
 
 .choices .rock {
-  background: #f7941a;
+  background: #E8DBD5;
 }
 
 .choices .rock path {
-  fill: #815116;
+  fill: #B5927F;
 }
 
 .choices .paper {
-  background: #8dc351;
+  background: #E8DBD5;
 }
 
 .choices .paper path {
-  fill: #3f5e1b;
+  fill: #B5927F;
 }
 
 .choices .scissors {
-  background: #7c79ea;
+  background: #E8DBD5;
 }
 
 .choices .scissors path {
-  fill: #2f2c8f;
+  fill: #B5927F;
 }
 
 .choices .computer-choice {
-  background: #333;
-  color: #bbb;
+  background: #CEAA9A;
+  color: #61544D;
 }
 
 .choices .computer-choice path {
-  fill: #bbb;
+  fill: #61544D;
 }
 
 .game-state {
-  background: rgba(0, 0, 0, 0.5);
+  background: #61544D;
   position: absolute;
   top: 0;
   left: 0;
@@ -174,19 +174,19 @@ h6 {
 }
 
 .game-state.win > div {
-  background: rgb(141, 195, 81);
-  color: rgb(226, 243, 206);
+  background: #D0BCB2;
+  color: #836835;
 }
 .game-state.win svg path {
-  fill: rgb(226, 243, 206);
+  fill: #F1F1F1;
 }
 
 .game-state.draw > div {
-  background: rgb(0, 0, 0);
-  color: rgb(88, 88, 88);
+  background: #D0BCB2;
+  color: #F1F1F1;
 }
 .game-state.draw svg path {
-  fill: rgb(88, 88, 88);
+  fill:  #DDC1BD;
 }
 
 .game-state.lose > div {
@@ -232,6 +232,6 @@ h6 {
   font-size: 30px;
   cursor: pointer;
   flex-shrink: 1;
-  background: #fa65ff;
+  background: #A78D7F;
   color: #fdedfd;
 }
