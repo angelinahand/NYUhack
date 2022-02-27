@@ -6,6 +6,8 @@ import Board from "./Board";
 import Square from "./Square";
 import {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
+import ModeAnimated from '../images/mode-animated.gif';
+import ModeStatic from '../images/mode.png';
 
 const defaultSquares = () => (new Array(9)).fill(null);
 
@@ -38,51 +40,61 @@ function TicTacToe() {
     if (computerWon) {
       setWinner('o');
     }
+
+    // Giving delay to computer turn after user clicks
+    const putComputerAtSquare = index => {
+      setTimeout(() => putComputerAt(index), 1500);
+    }
+
     const putComputerAt = index => {
       let newSquares = squares;
       newSquares[index] = 'o';
       setSquares([...newSquares]);
     };
+
     if (isComputerTurn) {
 
       const winingLines = linesThatAre('o', 'o', null);
       if (winingLines.length > 0) {
         const winIndex = winingLines[0].filter(index => squares[index] === null)[0];
-        putComputerAt(winIndex);
+        putComputerAtSquare(winIndex);
         return;
       }
 
       const linesToBlock = linesThatAre('x', 'x', null);
       if (linesToBlock.length > 0) {
         const blockIndex = linesToBlock[0].filter(index => squares[index] === null)[0];
-        putComputerAt(blockIndex);
+        putComputerAtSquare(blockIndex);
         return;
       }
 
       const linesToContinue = linesThatAre('o', null, null);
       if (linesToContinue.length > 0) {
-        putComputerAt(linesToContinue[0].filter(index => squares[index] === null)[0]);
+        putComputerAtSquare(linesToContinue[0].filter(index => squares[index] === null)[0]);
         return;
       }
 
       const randomIndex = emptyIndexes[ Math.ceil(Math.random()*emptyIndexes.length) ];
-      putComputerAt(randomIndex);
+      putComputerAtSquare(randomIndex);
+
+;
     }
   }, [squares]);
 
-
-
   function handleSquareClick(index) {
-    const isPlayerTurn = squares.filter(square => square !== null).length % 2 === 0;
-    if (isPlayerTurn) {
-      let newSquares = squares;
-      newSquares[index] = 'x';
-      setSquares([...newSquares]);
+    // To prevent user from clicking more squares after a winner has been declared
+    if (winner == null) {
+      const isPlayerTurn = squares.filter(square => square !== null).length % 2 === 0;
+      if (isPlayerTurn) {
+        let newSquares = squares;
+        newSquares[index] = 'x';
+        setSquares([...newSquares]);
+      }
     }
   }
 
   return (
-    <div class="tictactoe">
+    <div className="tictactoe">
         <h2>Tic Tac Toe</h2>
       <Board>
         {squares.map((square,index) =>
@@ -92,19 +104,21 @@ function TicTacToe() {
             onClick={() => handleSquareClick(index)} />
         )}
       </Board>
+      {/* <picture>
+        <source srcset={ModeStatic} media="(prefers-reduced-motion: reduce)"></source> 
+        <img className="modeAnimated" srcset={ModeAnimated} alt="Animated character"/>
+      </picture> */}
+        <Link className="backBtn" to="/">Back to Timer</Link>
       {!!winner && winner === 'x' && (
         <div className="result">
           <h3>You win!</h3>
-          <Link className="backBtn" to="/">Back to Timer</Link>
         </div>
       )}
       {!!winner && winner === 'o' && (
         <div className="result">
           <h3>Mode wins!</h3>
-          <Link className="backBtn" to="/">Back to Timer</Link>
         </div>
       )}
-
     </div>
   );
 }

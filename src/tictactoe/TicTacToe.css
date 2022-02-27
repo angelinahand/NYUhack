@@ -39,10 +39,17 @@
     color: white;
     background-color: var(--brown);
     padding: 0.5rem 1rem;
-    margin: 1rem;
+    margin: 2rem auto 1rem;
     border-radius: 15px;
   }
 
   .result {
       text-align: center;
+  }
+
+  .modeAnimated {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    width: 400px;
   }
