@@ -1,0 +1,55 @@
+/* Tic Tac Toe CSS */
+
+.tictactoe {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .board {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 4px solid var(--brown);
+  }
+  
+  .square { 
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--brown);
+    background-color: var(--lightBrown);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .squareImg {
+    width: 100px;
+    height: auto;
+  }
+
+  .backBtn {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--brown);
+    padding: 0.5rem 1rem;
+    margin: 2rem auto 1rem;
+    border-radius: 15px;
+  }
+
+  .result {
+      text-align: center;
+  }
+
+  .modeAnimated {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    width: 400px;
+  }
