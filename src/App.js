@@ -31,7 +31,7 @@ function App() {
           {showSettings ? <Settings /> : <Timer />}
         </SettingsContext.Provider>
       </div>
-      <img className='dino-img upper' src={require('./img/motivational.gif')}/>
+      <img className='dino-img upper' src={require('./img/motivational.gif') } alt="Motivational quote"/>
       {/* <img className='dino-img' src={require('./img/dino.gif')}/> */}
       <picture>
         <source srcSet={ModeStatic} media="(prefers-reduced-motion: reduce)"></source> 

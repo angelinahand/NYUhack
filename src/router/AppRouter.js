@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "../App";
 import TicTacToe from "../tictactoe/TicTacToe";
-import RockPaperScissors from "../rockPaperScissors/RockPaperScissors";
+// import RockPaperScissors from "../rockPaperScissors/RockPaperScissors";
 
 function AppRouter() {
     return (
@@ -9,7 +9,7 @@ function AppRouter() {
             <Routes>
             <Route path="/" element={<App />} />
             <Route path="/tictactoe" element={<TicTacToe />} />
-            <Route path="/rockPaperScissors" element={<RockPaperScissors />} />
+            {/* <Route path="/rockPaperScissors" element={<RockPaperScissors />} /> */}
             </Routes>
         </BrowserRouter>
     )
