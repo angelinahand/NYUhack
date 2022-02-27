@@ -32,6 +32,7 @@ function App() {
           {showSettings ? <Settings /> : <Timer />}
         </SettingsContext.Provider>
       </div>
+      <img className='dino-img upper' src={require('./img/motivational.gif')}/>
       <img className='dino-img' src={require('./img/dino.gif')}/>
       {/* <Game/> */}
       <Music/>

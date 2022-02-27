@@ -119,7 +119,7 @@ label{
   max-width: 337px;
   margin-top: -300px;
   position: absolute;
-  right: 30px;
+  right: 80px;
 }
 
 .music{
@@ -144,4 +144,10 @@ label{
 .btn-music{
   /* margin-top: 3px; */
   max-width: 63px;
+}
+
+.upper{
+  bottom: 330px;
+  right: 245px;
+  max-width: 230px;
 }
