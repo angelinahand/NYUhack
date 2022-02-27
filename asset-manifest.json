@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/NYUhack/static/css/main.b055ef6f.css",
+    "main.js": "/NYUhack/static/js/main.4f28acc5.js",
+    "static/js/787.90bdd759.chunk.js": "/NYUhack/static/js/787.90bdd759.chunk.js",
+    "static/media/motivational.gif": "/NYUhack/static/media/motivational.5ba62c95bc2f161bba79.gif",
+    "static/media/mode-animated.gif": "/NYUhack/static/media/mode-animated.083645fbc3f2e5b0ccaa.gif",
+    "static/media/mode.png": "/NYUhack/static/media/mode.f31966a564dbd3e2e5d0.png",
+    "static/media/dino.gif": "/NYUhack/static/media/dino.5cff98d8fd1c178de388.gif",
+    "static/media/book.png": "/NYUhack/static/media/book.6d2f97a7e259805e9af7.png",
+    "static/media/pencil.png": "/NYUhack/static/media/pencil.bf5496a1251fad9d1a22.png",
+    "index.html": "/NYUhack/index.html",
+    "main.b055ef6f.css.map": "/NYUhack/static/css/main.b055ef6f.css.map",
+    "main.4f28acc5.js.map": "/NYUhack/static/js/main.4f28acc5.js.map",
+    "787.90bdd759.chunk.js.map": "/NYUhack/static/js/787.90bdd759.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b055ef6f.css",
+    "static/js/main.4f28acc5.js"
+  ]
+}
