@@ -1,18 +1,9 @@
-import Square from './Square';
-import { useState } from 'react';
+// // https://github.com/dejwid/react-tic-tac-toe
 
-const defaultSquares = () => (new Array(9)).fill(null);
-
-function Board() {
-
-    const [squares, setSquares] = useState(defaultSquares());
-
+function Board(props) {
     return (
-        <section className="board">
-            {squares.map(square => <Square />)}
-
-        </section>
-    )
-}
-
-export default Board
+      <div className="board" {...props} />
+    );
+  }
+  
+  export default Board
