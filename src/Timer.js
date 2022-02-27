@@ -5,6 +5,7 @@ import PauseButton from "./PauseButton";
 import SettingsButton from "./SettingsButton";
 import {useContext, useState, useEffect, useRef} from "react";
 import SettingsContext from "./SettingsContext";
+import {Link} from "react-router-dom";
 
 const red = '#61544D';
 const green = '#A1B57D';
@@ -88,6 +89,7 @@ function Timer() {
       <div style={{marginTop:'90px'}}>
         <SettingsButton onClick={() => settingsInfo.setShowSettings(true)} />
       </div>
+      {mode !== 'work' && <Link className="game-btn" to="/tictactoe">Let's play a game!</Link>}
     </div>
   );
 }

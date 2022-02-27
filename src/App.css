@@ -44,7 +44,7 @@
 :root{
   --brown: #61544D;
   --lightBrown: #E8D1C5;
-  --green: #4aec8c;
+  --green: #A1B57D;
 }
 
 body{
@@ -71,10 +71,14 @@ margin: 30px;
 }
 
 
-.start-btn{
+.start-btn svg{
+  margin: 8.8px 0;
+}
+
+.game-btn {
   border: none;
   border-radius: 15px;
-  color: #61544D;
+  color: white;
   padding: 13px 10px;
   text-align: center;
   text-decoration: none;
@@ -82,7 +86,7 @@ margin: 30px;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: var(--brown);
 }
 
 button{
@@ -121,6 +125,13 @@ label{
   margin-top: -300px;
   position: absolute;
   right: 80px;
+}
+
+.modeAnimated {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  width: 400px;
 }
 
 .music{

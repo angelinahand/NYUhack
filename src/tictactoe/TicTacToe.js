@@ -94,7 +94,10 @@ function TicTacToe() {
   }
 
   return (
-    <div className="tictactoe">
+    <main className="tictactoe">
+       <header>
+        <h1>FocusMode</h1>
+      </header>
         <h2>Tic Tac Toe</h2>
       <Board>
         {squares.map((square,index) =>
@@ -105,8 +108,8 @@ function TicTacToe() {
         )}
       </Board>
       <picture>
-        <source srcset={ModeStatic} media="(prefers-reduced-motion: reduce)"></source> 
-        <img className="modeAnimated" srcset={ModeAnimated} alt="Animated character"/>
+        <source srcSet={ModeStatic} media="(prefers-reduced-motion: reduce)"></source> 
+        <img className="modeAnimated" srcSet={ModeAnimated} alt="Animated character"/>
       </picture>
         <Link className="backBtn" to="/">Back to Timer</Link>
       {!!winner && winner === 'x' && (
@@ -119,7 +122,7 @@ function TicTacToe() {
           <h3>Mode wins!</h3>
         </div>
       )}
-    </div>
+    </main>
   );
 }
 

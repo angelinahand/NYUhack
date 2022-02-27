@@ -1,11 +1,11 @@
 import './App.css';
 import Timer from "./Timer";
 import Settings from "./Settings";
-import Game from "./Game";
 import Music from "./Music";
-import landingScreen from "./landingScreen";
 import {useState} from "react";
 import SettingsContext from "./SettingsContext";
+import ModeAnimated from './images/mode-animated.gif';
+import ModeStatic from './images/mode.png';
 
 function App() {
 
@@ -15,10 +15,9 @@ function App() {
 
   return (
     <main>
-      <div>
+      <header>
         <h1>FocusMode</h1>
-      </div>
-      <landingScreen />
+      </header>
       <div className="timer">
         <SettingsContext.Provider value={{
           showSettings,
@@ -33,8 +32,11 @@ function App() {
         </SettingsContext.Provider>
       </div>
       <img className='dino-img upper' src={require('./img/motivational.gif')}/>
-      <img className='dino-img' src={require('./img/dino.gif')}/>
-      {/* <Game/> */}
+      {/* <img className='dino-img' src={require('./img/dino.gif')}/> */}
+      <picture>
+        <source srcSet={ModeStatic} media="(prefers-reduced-motion: reduce)"></source> 
+        <img className="modeAnimated" srcSet={ModeAnimated} alt="Animated character"/>
+      </picture>
       <Music/>
     </main>
   );
