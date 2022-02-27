@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import {Howl} from "howler";
+// import React, { Component } from "react";
+// import {Howl} from "howler";
 import ReactHowler from 'react-howler';
 import MusicBtn from "./MusicBtn";
 import PauseButton from "./PauseButton";
